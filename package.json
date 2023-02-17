@@ -1,6 +1,6 @@
 {
   "name": "ts-array-length",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "TypeScript utils for dealing with TypeScript arrays",
   "main": "index.js",
   "type": "module",
@@ -12,6 +12,10 @@
     "typescript",
     "array",
     "length"
+  ],
+  "files": [
+    "dist",
+    "src"
   ],
   "author": "uhyo <uhyo@uhy.ooo>",
   "license": "MIT",
