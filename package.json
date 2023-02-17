@@ -1,6 +1,6 @@
 {
   "name": "ts-array-length",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "TypeScript utils for dealing with TypeScript arrays",
   "main": "index.js",
   "type": "module",
@@ -8,6 +8,7 @@
     "test": "vitest",
     "test-type": "vitest typecheck"
   },
+  "repository": "github:uhyo/ts-array-length",
   "keywords": [
     "typescript",
     "array",
