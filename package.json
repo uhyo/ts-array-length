@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "vitest"
   },
   "keywords": [
     "typescript",
@@ -16,6 +16,7 @@
   "license": "MIT",
   "devDependencies": {
     "prettier": "^2.8.4",
-    "typescript": "^5.0.0-beta"
+    "typescript": "^5.0.0-beta",
+    "vitest": "^0.28.5"
   }
 }
