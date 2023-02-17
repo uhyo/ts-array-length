@@ -71,11 +71,9 @@ describe("ReadonlyArrayMinLength", () => {
     >();
   });
 
-  it("It works for a union of literal number types", () => {
+  it("When a union of literal number types are given, the minimum is used", () => {
     expectTypeOf<ReadonlyArrayMinLength<string, 1 | 2 | 3>>().toEqualTypeOf<
-      | readonly [string, ...string[]]
-      | readonly [string, string, ...string[]]
-      | readonly [string, string, string, ...string[]]
+      readonly [string, ...string[]]
     >();
   });
 
@@ -93,8 +91,7 @@ describe("ReadonlyArrayMinLength", () => {
       readonly boolean[]
     >();
     expectTypeOf<ReadonlyArrayMinLength<boolean, 5 | -0.5>>().toEqualTypeOf<
-      | readonly boolean[]
-      | readonly [boolean, boolean, boolean, boolean, boolean, ...boolean[]]
+      readonly [boolean, boolean, boolean, boolean, boolean, ...boolean[]]
     >();
   });
 

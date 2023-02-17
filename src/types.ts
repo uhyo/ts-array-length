@@ -1,4 +1,8 @@
-import { IsCertainlyInteger } from "./typeUtils.js";
+import {
+  FilterCertainIntegers,
+  IsCertainlyInteger,
+  IsNever,
+} from "./typeUtils.js";
 
 export type ReadonlyArrayExactLength<T, N extends number> = N extends number
   ? number extends N
@@ -16,13 +20,13 @@ type ReadonlyArrayExactLengthRec<
   ? Result
   : ReadonlyArrayExactLengthRec<T, L, readonly [T, ...Result]>;
 
-export type ReadonlyArrayMinLength<T, N extends number> = N extends number
-  ? number extends N
+export type ReadonlyArrayMinLength<T, N extends number> = number extends N
+  ? readonly T[]
+  : FilterCertainIntegers<N> extends infer N extends number
+  ? IsNever<N> extends true
     ? readonly T[]
-    : IsCertainlyInteger<N> extends true
-    ? ReadonlyArrayMinLengthRec<T, N, [], readonly T[]>
-    : readonly T[]
-  : never;
+    : ReadonlyArrayMinLengthRec<T, N, [], readonly T[]>
+  : readonly T[];
 
 type ReadonlyArrayMinLengthRec<
   T,
