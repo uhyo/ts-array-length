@@ -6,6 +6,7 @@
   "types": "dist/index.d.ts",
   "type": "module",
   "scripts": {
+    "release": "bumpp",
     "test": "vitest",
     "test-type": "vitest typecheck"
   },
@@ -22,6 +23,7 @@
   "author": "uhyo <uhyo@uhy.ooo>",
   "license": "MIT",
   "devDependencies": {
+    "bumpp": "^9.4.1",
     "prettier": "^2.8.4",
     "typescript": "^5.0.0-beta",
     "vitest": "^0.28.5"
