@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { hasLength, hasMinLength, isNonEmpty } from "./index.js";
+import { hasLength, hasMinLength, isNonEmpty } from "./lib.js";
 
 describe("hasLength", () => {
   it("Returns true if array has given length", () => {
