@@ -1,5 +1,5 @@
 import { expectTypeOf, describe, it } from "vitest";
-import { hasLength, hasMinLength } from "./index.js";
+import { hasLength, hasMinLength } from "./index.cjs";
 import { ReadonlyArrayExactLength, ReadonlyArrayMinLength } from "./types.js";
 
 describe("ReadonlyArrayExactLength", () => {

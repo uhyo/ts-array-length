@@ -1,5 +1,5 @@
 import { describe, it, assertType } from "vitest";
-import { hasLength, hasMinLength, isNonEmpty } from "./index.js";
+import { hasLength, hasMinLength, isNonEmpty } from "./index.cjs";
 
 function getArr<T>(): readonly T[] {
   return [];
