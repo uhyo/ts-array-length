@@ -1,6 +1,6 @@
 {
   "name": "ts-array-length",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "TypeScript utils for dealing with TypeScript arrays",
   "main": "dist/index.cjs",
   "module": "dist/index.mjs",
