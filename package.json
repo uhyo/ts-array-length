@@ -14,6 +14,7 @@
     }
   },
   "scripts": {
+    "release": "bumpp",
     "build": "tsc",
     "build:watch": "tsc -w",
     "test": "vitest",
@@ -32,6 +33,7 @@
   "author": "uhyo <uhyo@uhy.ooo>",
   "license": "MIT",
   "devDependencies": {
+    "bumpp": "^9.4.1",
     "prettier": "^2.8.4",
     "typescript": "^5.5.3",
     "vitest": "^1.6.0"
